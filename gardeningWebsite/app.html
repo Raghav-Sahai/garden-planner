@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTgarden App</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><p>SMARTgarden</p></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">App</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="App">
+        <div class="left-wrapper">
+            <form id="dimInput" class="dim-form">
+                <h1>Garden dimension</h1>
+                    <label>Enter your garden's dimensions in ft</label><br><br>
+                    <div class="dim-text">
+                        <input type="text" id="height" name="height" class="dim-input-text" placeholder="width" value="5"></input> 
+                        x
+                         <input type="text" id="width" name="width" class="dim-input-text" placeholder="length" value="8"></input>
+                    </div> 
+                    <button type="submit">Create Garden</button>
+            </form>
+            <hr />
+            <h1>Plant Selection</h1>
+            <p>select a plant and click on the garden to add the plant</p>
+            <div class="plants" id="card-container"></div>
+        </div>
+        
+        <div class="garden-container" id="garden-container"></div>
+
+    </section>
+
+    <footer>
+        <p>SMARTgarden</p>
+        <p>Copyright &copy; 2020 SMARTgarden<br><br><a href="#">Privacy Policy </a>|<a href="#"> Terms of Use</a></p>
+    </footer>
+    <script src="garden.js"></script>
+</body>
+</html>
